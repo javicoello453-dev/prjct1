@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ENTRE LÍNEAS · Lo que sientes. Lo que callas. Lo que necesitas entender.</title>
+<meta name="description" content="Tests, un asistente y respuestas gratis para entender tus relaciones, la atracción y tu vida sentimental. Sin registro.">
+<meta property="og:title" content="ENTRE LÍNEAS · ¿Qué está pasando en tu vida amorosa?"><meta property="og:description" content="Tests, mensajes y respuestas gratis para tus dudas amorosas."><meta property="og:type" content="website"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#FFF9F5;--fg:#111014;--mut:#5f5a68;--card:#fff;--bd:#eadfd9;--p:#FF3D81;--v:#8B5CF6;--o:#FF7A45;--hb:rgba(255,249,245,.9);--ink:#111014;--w:#FFF9F5;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111014;--fg:#FFF9F5;--mut:#aaa5b4;--card:#1c1a22;--bd:#2d2a35;--hb:rgba(17,16,20,.9);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111014;--fg:#FFF9F5;--mut:#aaa5b4;--card:#1c1a22;--bd:#2d2a35;--hb:rgba(17,16,20,.9);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{height:auto;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.6 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hb);backdrop-filter:blur(12px);z-index:60}
+h1,h2,h3,.logo{font-family:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--v);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--hb);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+.bar{display:flex;align-items:center;gap:12px;height:60px}
+.logo{font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.logo i{display:inline-block;width:.55em;height:3px;margin:0 .15em .25em;background:linear-gradient(90deg,var(--p),var(--o));vertical-align:middle;border-radius:3px}
+nav{display:none;position:absolute;left:0;right:0;top:60px;background:var(--bg);border-bottom:1px solid var(--bd);padding:8px 20px 16px}
+nav.open{display:block}
+nav a{display:block;padding:12px 0;text-decoration:none;font-weight:500;border-bottom:1px solid var(--bd)}
+nav a:hover{color:var(--p)}
+.acts{margin-left:auto;display:flex;gap:8px;align-items:center}
+.ib{min-width:44px;height:44px;border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:14px;font:inherit;font-weight:600;cursor:pointer;transition:transform .15s,border-color .15s}
+.ib:hover{border-color:var(--p);transform:translateY(-1px)}
+.ib:active{transform:scale(.96)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:2px solid transparent;font:600 1rem "Instrument Sans",sans-serif;text-decoration:none;cursor:pointer;background:var(--p);color:var(--ink);transition:transform .15s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,61,129,.4)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;border-color:rgba(255,249,245,.5);color:var(--w)}
+.btn.ghost:hover{border-color:var(--o);box-shadow:none}
+.btn.sm{min-height:44px;padding:0 18px}
+.hs,.mo{display:none}
+@media(max-width:599px){.mo{display:block}}
+@media(min-width:600px){.hs{display:inline-flex}}
+@media(min-width:960px){nav{display:flex!important;position:static;border:0;padding:0;gap:18px;background:none;margin-left:12px}nav a{border:0;padding:0;font-size:.95rem}#bg{display:none}.mo{display:none!important}}
+.hero{background:radial-gradient(70% 60% at 85% 10%,rgba(139,92,246,.55),transparent 70%),radial-gradient(60% 55% at 5% 95%,rgba(255,61,129,.5),transparent 70%),radial-gradient(40% 40% at 60% 100%,rgba(255,122,69,.35),transparent 70%),#111014;color:var(--w);padding:44px 0 56px;overflow:hidden}
+.hero .wrap{display:grid;gap:36px}
+.hero h1{font-size:clamp(2.1rem,9.5vw,4.6rem);font-weight:800;text-transform:uppercase;letter-spacing:-.025em}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--p),var(--o));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{font-size:1.1rem;max-width:34em;color:#e7ddd8;margin:18px 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.chat{display:flex;flex-direction:column;gap:12px;max-width:420px}
+.b{padding:14px 18px;border-radius:22px;font-size:.98rem;line-height:1.4;max-width:88%;opacity:0;transform:translateY(14px);animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}
+.b small{display:block;font-weight:600;margin-bottom:2px;opacity:.75}
+.b1{background:#2a2630;border-bottom-left-radius:6px;animation-delay:.2s}
+.b2{background:linear-gradient(135deg,var(--v),#6d3fe0);align-self:flex-end;border-bottom-right-radius:6px;animation-delay:.9s}
+.b3{background:linear-gradient(135deg,var(--p),var(--o));color:var(--ink);align-self:flex-end;border-bottom-right-radius:6px;animation-delay:1.6s;font-weight:500}
+@keyframes up{to{opacity:1;transform:none}}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.25fr .75fr;align-items:center}.hero{padding:76px 0 88px}}
+section{padding:56px 0}
+h2{font-size:clamp(1.7rem,6vw,2.7rem);font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--mut);max-width:38em;margin:10px 0 0}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font:500 .95rem "Instrument Sans",sans-serif;cursor:pointer;transition:all .15s}
+.chip:hover{border-color:var(--v)}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+input[type=search],input[type=email],input[type=text],select,textarea{width:100%;min-height:48px;padding:10px 16px;border-radius:14px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font:inherit}
+input:focus,select:focus,textarea:focus{border-color:var(--v)}
+.grid{display:grid;gap:14px;margin-top:16px}
+@media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.grid{grid-template-columns:1fr 1fr 1fr}}
+details.card{position:relative;background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:18px 56px 18px 18px;transition:border-color .2s,transform .2s,box-shadow .2s}
+details.card:hover{border-color:var(--p);transform:translateY(-3px);box-shadow:0 12px 30px rgba(139,92,246,.15)}
+details.card[open]{border-color:var(--v)}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:1.2rem;margin-top:8px}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;padding:2px 10px;border-radius:999px;border:1px solid var(--bd);color:var(--mut)}
+details p{margin:12px 0 0;color:var(--mut)}
+.fav{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;color:var(--mut);font-size:1.3rem;cursor:pointer;border-radius:50%}
+.fav[aria-pressed="true"]{color:var(--p)}
+.empty{padding:28px;border:1px dashed var(--bd);border-radius:22px;color:var(--mut);grid-column:1/-1}
+.gen{background:#111014;color:var(--w);border-radius:32px;padding:26px 20px;margin-top:24px;background-image:radial-gradient(50% 60% at 100% 0,rgba(139,92,246,.4),transparent 70%)}
+.gen label{display:block;font-weight:600;margin:0 0 6px;font-size:.95rem}
+.gen select,.gen input{background:#1c1a22;border-color:#3a3644;color:var(--w)}
+.fields{display:grid;gap:14px}
+@media(min-width:720px){.fields{grid-template-columns:1.4fr 1fr 1fr}}
+.outs{display:grid;gap:12px;margin-top:22px}
+@media(min-width:900px){.outs{grid-template-columns:repeat(3,1fr)}}
+.out{background:#1c1a22;border:1px solid #3a3644;border-radius:20px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.out textarea{min-height:110px;resize:vertical;background:transparent;border:0;padding:0;color:var(--w);font-size:1rem}
+.out .row{display:flex;gap:8px}
+.out button{flex:1;min-height:44px;border-radius:12px;border:1px solid #4a4556;background:transparent;color:var(--w);font:600 .92rem "Instrument Sans",sans-serif;cursor:pointer;transition:all .15s}
+.out button:hover{border-color:var(--o)}
+.note{font-size:.88rem;color:#b9b2c2;margin-top:14px}
+.qs{display:grid;gap:12px;margin-top:20px}@media(min-width:720px){.qs{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.qs{grid-template-columns:repeat(3,1fr)}}
+.qc{text-align:left;min-height:88px;padding:16px 18px;border-radius:22px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font:700 1.05rem/1.25 "Bricolage Grotesque",sans-serif;cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .2s}
+.qc:hover{border-color:var(--p);transform:translateY(-3px);box-shadow:0 12px 30px rgba(255,61,129,.15)}
+.qc small{display:block;font:400 .85rem "Instrument Sans",sans-serif;color:var(--mut);margin-top:6px}
+a.chip{display:inline-flex;align-items:center;text-decoration:none}
+.gen textarea#hq{background:#1c1a22;border-color:#3a3644;color:var(--w)}
+.out b{display:block;margin-bottom:4px}.out span{display:block}
+.ad{margin:24px auto;max-width:728px;min-height:90px}
+.soon{display:grid;gap:14px;margin-top:20px}
+@media(min-width:720px){.soon{grid-template-columns:1fr 1fr}}
+.soon div{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:18px}
+.soon h3{font-size:1.1rem}.soon p{margin:8px 0 0;color:var(--mut);font-size:.95rem}
+.sub-box{background:linear-gradient(135deg,var(--v),var(--p) 60%,var(--o));border-radius:32px;padding:32px 22px;color:var(--ink)}
+.sub-box h2{text-transform:uppercase}
+.sub-box form{display:grid;gap:12px;margin-top:20px;max-width:460px}
+.sub-box input[type=email]{background:#fff;border-color:transparent;color:var(--ink)}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}
+.chk input{width:22px;height:22px;margin-top:2px;flex:none;accent-color:#111014}
+.sub-box .btn{background:#111014;color:var(--w)}
+#sm{font-weight:600;min-height:1.4em}
+footer{border-top:1px solid var(--bd);padding:32px 0 40px;color:var(--mut);font-size:.9rem}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.b{opacity:1;transform:none}}
+</style>
+</head>
+<body id="top">
+<header class="top"><div class="wrap bar">
+<a class="logo" href="#top">ENTRE<i></i>LÍNEAS</a>
+<nav id="nav" aria-label="Principal">
+<a href="#guias" data-cat="Amor">Amor</a><a href="#guias" data-cat="Atracción">Atracción</a><a href="#guias" data-cat="Psicología">Psicología</a><a href="#guias" data-cat="Citas">Citas</a><a href="#guias" data-cat="Rupturas">Rupturas</a><a href="#tests">Tests</a><a href="#pronto">Dilemas</a><a href="#herramientas">Herramientas</a><a class="mo" href="#suscripcion">Suscribirme</a>
+</nav>
+<div class="acts">
+<button class="ib" id="favb" aria-label="Ver mis favoritos">♥ <span id="fc">0</span></button>
+<button class="ib" id="th" aria-label="Cambiar entre modo claro y oscuro">◐</button>
+<a class="btn sm hs" href="#suscripcion">Suscribirme</a>
+<button class="ib" id="bg" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
+</div></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<div>
+<h1>¿Qué está pasando <em>en tu vida amorosa?</em></h1>
+<p class="sub">Descubre lo que sientes, entiende mejor tus relaciones y encuentra respuestas a esas preguntas que no siempre sabes a quién hacer.</p>
+<div class="cta"><a class="btn" href="#hablemos">Tengo una duda amorosa</a><a class="btn ghost" href="#tests">Hacer un test</a><a class="btn ghost" href="#guias">Descubrir qué significa</a></div>
+</div>
+<div class="chat" aria-hidden="true">
+<div class="b b1"><small>Lo que pasa</small>Me escribe todos los días, pero nunca propone vernos.</div>
+<div class="b b2"><small>Hecho y suposición</small>Hecho: escribe a diario. Suposición: no le intereso.</div>
+<div class="b b3">Pregunta útil: «Me encanta hablar contigo, ¿te apetece que nos veamos este jueves?»</div>
+</div>
+</div></div>
+
+<section><div class="wrap">
+<h2>Pruébalo gratis</h2>
+<p class="lead">Sin registro y sin pagar. Empieza por la duda que más se parezca a la tuya.</p>
+<div class="qs">
+<button class="qc" data-a="h" data-v="Una persona es amable conmigo y no sé si le gusto o solo es educada.">¿Le gusto o solamente es amable conmigo?<small>Pídele orientación a Hablemos de eso</small></button>
+<button class="qc" data-a="h" data-v="Me busca mucho y de repente desaparece sin explicación.">¿Por qué me busca y después desaparece?<small>Pídele orientación a Hablemos de eso</small></button>
+<button class="qc" data-a="g" data-v="2|Divertido">¿Qué le respondo sin sonar aburrido?<small>Mensajes listos para editar</small></button>
+<button class="qc" data-a="t" data-v="limites">¿Es una relación sana o estoy ignorando señales?<small>Test sobre tus límites</small></button>
+<button class="qc" data-a="c" data-v="Rupturas">¿Por qué sigo pensando en mi ex?<small>Guías sobre rupturas</small></button>
+<button class="qc" data-a="c" data-v="Amor">¿Cómo saber si estamos buscando lo mismo?<small>Guías sobre amor</small></button>
+<button class="qc" data-a="g" data-v="9|Natural">¿Cómo iniciar una conversación con alguien que me gusta?<small>Mensajes para empezar</small></button>
+</div>
+<div class="tools"><a class="chip" href="#hablemos">Hablemos de eso</a><a class="chip" href="#herramientas">¿Qué le respondo?</a><a class="chip" href="#tests">Tests</a><a class="chip" href="#temas">Temas para conversar</a></div>
+</div></section>
+
+<section id="guias" style="padding-top:0"><div class="wrap">
+<h2>Lo que todos queremos entender</h2>
+<p class="lead">Guías breves y sin dramatismo. Selección editorial: aún no hay datos de visitas, así que no ordenamos por popularidad.</p>
+<div class="tools" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+<input type="search" id="q" placeholder="Buscar en las guías" aria-label="Buscar en las guías">
+<div class="grid" id="grid" aria-live="polite"></div>
+</div></section>
+
+<section id="herramientas" style="padding-top:0"><div class="wrap">
+<h2>¿Qué le respondo?</h2>
+<p class="lead">Elige una situación y un tono. Obtén tres opciones que puedes editar y copiar. Todas buscan claridad y respeto, sin juegos ni presión.</p>
+<div class="gen">
+<div class="fields">
+<div><label for="sit">Situación</label><select id="sit"></select></div>
+<div><label for="ton">Tono</label><select id="ton"></select></div>
+<div><label for="nom">Nombre (opcional)</label><input type="text" id="nom" maxlength="30" autocomplete="off" placeholder="Cómo se llama"></div>
+</div>
+<div class="outs" id="outs" aria-live="polite"></div>
+<div class="cta" style="margin-top:16px"><button class="btn" id="more" type="button">Ver otras opciones</button></div>
+<p class="note">Orientación general basada en una biblioteca de mensajes, no en una IA ni en terapia profesional. Si hay miedo, coerción o violencia en tu relación, contacta con los servicios de emergencia o una línea de ayuda de tu país.</p>
+</div>
+</div></section>
+
+<section id="hablemos" style="padding-top:0"><div class="wrap">
+<h2>Hablemos de eso</h2>
+<p class="lead">Cuéntame tu situación con tus palabras. Evita nombres y datos que identifiquen a nadie.</p>
+<div class="gen">
+<label for="hq">Tu pregunta</label>
+<textarea id="hq" rows="4" maxlength="500" placeholder="Me habla todos los días, pero nunca me invita a salir. ¿Qué hago?"></textarea>
+<div class="cta" style="margin-top:14px"><button class="btn" id="ha" type="button">Responder</button><button class="btn ghost" id="hn" type="button">Nueva conversación</button></div>
+<div class="outs" id="hr" style="grid-template-columns:1fr" aria-live="polite"></div>
+<p class="note"><b>Demo local:</b> estas respuestas salen de plantillas en tu navegador, no de una IA. Tu texto no se envía ni se guarda. La IA real necesita un servidor con clave de proveedor. Es orientación general, no terapia ni diagnóstico.</p>
+</div></div></section>
+
+<section id="tests" style="padding-top:0"><div class="wrap">
+<h2>Tests</h2>
+<p class="lead">Resultados orientativos y entretenidos. No son diagnósticos ni mediciones científicas.</p>
+<div class="tools" id="tl"></div>
+<div class="gen" id="tb" aria-live="polite"></div>
+</div></section>
+
+<section id="temas" style="padding-top:0"><div class="wrap">
+<h2>Temas para conversar</h2>
+<p class="lead"><b>Pregunta del día:</b> <span id="pd"></span></p>
+<div class="gen"><label for="tc">¿Para qué ocasión?</label><select id="tc"></select>
+<div id="tq" style="font:700 1.5rem/1.25 'Bricolage Grotesque',sans-serif;margin:18px 0;min-height:4.5em" aria-live="polite"></div>
+<div class="cta"><button class="btn" id="tn" type="button">Otra pregunta</button><button class="btn ghost" id="tcp" type="button">Copiar</button></div></div>
+</div></section>
+
+<aside class="ad" data-s="inicio" hidden aria-label="Publicidad"></aside>
+
+<section id="pronto" style="padding-top:0"><div class="wrap">
+<h2>En construcción</h2>
+<p class="lead">Estas partes no están activas todavía y no fingimos que lo estén.</p>
+<div class="soon">
+<div><h3>Más tests</h3><p>Hay 2 de los 10 previstos. Los otros 8 aún no están creados.</p></div>
+<div><h3>IA real en «Hablemos de eso»</h3><p>Hoy responde con plantillas locales. La IA real requiere un servidor seguro con una clave de proveedor.</p></div>
+<div><h3>Dilemas y comunidad</h3><p>Historias anónimas con revisión previa. Requiere base de datos y moderación.</p></div>
+<div><h3>Publicidad</h3><p>No hay anuncios activos. Solo aparecerán cuando AdSense apruebe la web y se configuren las unidades. Todo seguirá siendo gratis.</p></div>
+</div>
+</div></section>
+
+<section id="suscripcion" style="padding-top:0"><div class="wrap"><div class="sub-box">
+<h2>Menos dudas. Más claridad.</h2>
+<p style="margin:10px 0 0;max-width:34em">Recibe ideas, consejos y reflexiones para entender mejor tus relaciones.</p>
+<form id="sf" novalidate>
+<label for="em" style="font-weight:600">Tu correo</label>
+<input type="email" id="em" autocomplete="email" placeholder="nombre@correo.com" required>
+<label class="chk"><input type="checkbox" id="cn"><span>Acepto recibir correos de ENTRE LÍNEAS. Puedo darme de baja en cualquier momento con el enlace que incluirá cada mensaje.</span></label>
+<button class="btn" type="submit">Quiero recibirlo</button>
+<div id="sm" role="status"></div>
+</form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+<p>El contenido es orientativo y no sustituye el apoyo de un profesional de la salud mental. Aviso de privacidad, términos y cookies: pendientes de redactar antes de publicar la web.</p>
+</div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const G=[
+["Atracción","¿Le gusto o solo le gusta mi atención?","Fíjate en la reciprocidad, no en la frecuencia: ¿pregunta por ti, propone planes, se interesa por tu vida fuera del chat? Si solo responde cuando tú empiezas, puede ser comodidad. Lo más claro es proponer un plan concreto y ver cómo responde."],
+["Atracción","¿Por qué tarda tanto en responder?","Hay muchas razones posibles: ritmo propio, trabajo, ansiedad social o poco interés. Un mensaje tardío aislado no dice nada; un patrón sostenido sí informa. Observa cómo es cuando sí habla contigo y pregunta con calma, sin reproche."],
+["Psicología","¿Estoy enamorado o tengo miedo de perderlo?","El miedo a perder busca alivio y se calma con la presencia. El cariño te interesa también cuando no hay riesgo. Pregúntate si echarías de menos a esa persona o la seguridad que te daba. No hay una respuesta correcta, pero sí una más honesta."],
+["Amor","¿Cómo sé si quiere algo serio?","No lo adivines: pregúntalo. Una conversación tranquila sobre expectativas («¿qué buscas ahora?») evita meses de interpretación. Las acciones coherentes con las palabras, como planes, constancia o presentar amigos, pesan más que las promesas."],
+["Rupturas","¿Vale la pena darle otra oportunidad?","Pregúntate qué ha cambiado de verdad, no solo qué echas de menos. Si el problema fue falta de respeto, necesitas hechos sostenidos antes que palabras. Si hubo abuso o coerción, prioriza tu seguridad y busca apoyo."],
+["Amor","No confundas la química con la compatibilidad","La química enciende; la compatibilidad sostiene. Mira si coincidís en valores, ritmo de vida y forma de resolver conflictos, y si puedes ser tú sin esfuerzo. Una sin la otra suele dejar dudas."],
+["Rupturas","La diferencia entre extrañar a alguien y querer volver","Extrañar es normal tras una ruptura: echas de menos rutinas y cariño. Querer volver exige que lo que os separó tenga solución real. Antes de escribirle, anota por qué terminó y si eso cambió."],
+["Psicología","Cómo dejar de interpretar cada mensaje como una señal","Separa lo que ocurrió (tardó tres horas) de la historia que te cuentas (ya no le intereso). Pregúntate qué otras explicaciones caben. Si la duda te desgasta, una pregunta directa cuesta menos que seguir descifrando."],
+["Citas","Cómo proponer una cita sin presión","Sé concreto y ligero: un plan, un día y una salida fácil («si no te cuadra, sin problema»). Un café o un paseo reducen la tensión. Si dice que no, agradécelo y no insistas."]
+];
+const CATS=["Todos","Amor","Atracción","Psicología","Citas","Rupturas","Favoritos"];
+let cat="Todos",q="",favs=[];
+try{favs=JSON.parse(localStorage.getItem("el_favs")||"[]")}catch(e){}
+const saveF=()=>{try{localStorage.setItem("el_favs",JSON.stringify(favs))}catch(e){}};
+function chips(){$("#chips").innerHTML=CATS.map(c=>`<button class="chip" type="button" aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join("");}
+function guides(){
+  const t=q.trim().toLowerCase();
+  const list=G.map((g,i)=>({g,i})).filter(({g,i})=>(cat==="Todos"||(cat==="Favoritos"?favs.includes(i):g[0]===cat))&&(!t||(g[1]+" "+g[2]).toLowerCase().includes(t)));
+  $("#grid").innerHTML=list.length?list.map(({g,i})=>`<div style="position:relative"><details class="card"><summary><span class="tag">${g[0]}</span><h3>${g[1]}</h3></summary><p>${g[2]}</p></details><button class="fav" type="button" data-i="${i}" aria-pressed="${favs.includes(i)}" aria-label="Guardar en favoritos: ${g[1]}">${favs.includes(i)?"♥":"♡"}</button></div>`).join(""):`<div class="empty">${cat==="Favoritos"&&!favs.length?"Aún no has guardado favoritos. Toca el corazón de una guía para guardarla.":"No hay guías que coincidan. Prueba con otra palabra o categoría."}</div>`;
+  $("#fc").textContent=favs.length;chips();
+}
+$("#chips").addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(b){cat=b.dataset.c;guides();}});
+$("#q").addEventListener("input",e=>{q=e.target.value;guides();});
+$("#grid").addEventListener("click",e=>{const b=e.target.closest(".fav");if(!b)return;const i=+b.dataset.i;favs=favs.includes(i)?favs.filter(x=>x!==i):[...favs,i];saveF();guides();});
+$("#favb").addEventListener("click",()=>{cat="Favoritos";guides();$("#guias").scrollIntoView();});
+document.querySelectorAll("nav a[data-cat]").forEach(a=>a.addEventListener("click",()=>{cat=a.dataset.cat;guides();}));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>{$("#nav").classList.remove("open");$("#bg").setAttribute("aria-expanded","false");}));
+$("#bg").addEventListener("click",()=>{const o=$("#nav").classList.toggle("open");$("#bg").setAttribute("aria-expanded",o);});
+$("#th").addEventListener("click",()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark";});
+
+const S=["Me dice que me extraña","Me responde de manera fría","Me manda una indirecta","Quiero invitarle a salir","Quiero mostrar interés","Necesito disculparme","Quiero aclarar qué somos","Quiero poner un límite","Quiero cerrar una relación con respeto","Quiero iniciar una conversación","Quiero expresar mis sentimientos"];
+const B=[
+["Yo también te he echado de menos. ¿Te apetece que nos veamos esta semana?","Me alegra que me lo digas, a mí también me pasa. ¿Cómo estás tú de verdad?","Gracias por decírmelo. Me gustaría hablarlo con calma, ¿cuándo te va bien?"],
+["Te noto distinto estos días. ¿Va todo bien o hay algo que quieras contarme?","No quiero suponer nada: ¿estás con poco ánimo o hice algo que te molestó?","Si necesitas espacio, lo entiendo. Solo dime cómo prefieres que lo llevemos."],
+["Leí tu mensaje y no quiero malinterpretarlo. ¿Qué querías decirme exactamente?","Prefiero hablar claro: ¿hay algo que quieras decirme de forma directa?","Me interesa lo que dices, pero necesito entenderlo bien. ¿Me lo cuentas sin rodeos?"],
+["Me lo paso muy bien hablando contigo. ¿Te apetece tomar algo el jueves o el viernes?","Tengo ganas de verte en persona. ¿Quedamos para un café esta semana?","¿Te animas a un plan sencillo este fin de semana? Si no te cuadra, no pasa nada."],
+["Me gusta cómo conversamos y me gustaría conocerte mejor.","Me llamas la atención y prefiero decírtelo antes que quedarme con la duda.","Disfruto mucho hablar contigo. ¿Te gustaría que nos conociéramos más?"],
+["Tenías razón en lo que dijiste y siento cómo te hice sentir. Quiero entenderlo mejor.","Lamento lo que pasó. No busco excusarme, solo que sepas que me importa.","Me equivoqué y te pido disculpas. ¿Hay algo que pueda hacer para repararlo?"],
+["Me gustaría que habláramos de qué somos, porque quiero estar en la misma página que tú.","Me siento bien contigo y necesito saber qué esperas tú de esto. ¿Lo hablamos?","Prefiero preguntarte que suponer: ¿cómo ves lo nuestro?"],
+["Necesito pedirte algo importante para mí: que respetemos mis tiempos y mis límites.","Esto no me resulta cómodo y prefiero decírtelo con claridad.","Te lo digo con cariño: hay cosas que no puedo aceptar y necesito que lo respetes."],
+["Prefiero decírtelo con sinceridad: no quiero continuar. Gracias por lo vivido, te deseo lo mejor.","He pensado mucho y creo que lo mejor es dejarlo aquí. Quiero que sea con respeto.","No siento que esto vaya hacia donde yo quiero ir. Gracias por tu tiempo y tu sinceridad."],
+["Hola, ¿qué tal va tu día? Me apeteció escribirte porque me caes bien.","Hola, ¿cómo vas? Me quedé pensando en lo que me contaste. ¿Cómo te fue?","Hola, me apeteció saludarte. ¿Qué tal tu semana?"],
+["Quiero ser transparente contigo: me importas y siento algo especial por ti.","Llevo tiempo queriendo decirte que me gustas y prefiero que lo sepas.","Quiero decirte lo que siento sin presionarte: me importas mucho."]
+];
+const E=["",""," "];
+const T={
+"Natural":[["","",""],["","",""]],
+"Divertido":[["Plot twist: ","Te lo digo sin drama: ","Va en serio, pero con humor: "],[" 😄"," 😅"," (prometo no ponerme intenso)"]],
+"Coqueto":[["","",""],[" 😉"," 😏"," Y sí, sonrío mientras lo escribo."]],
+"Romántico":[["Con cariño: ","Desde el corazón: ","Con toda sinceridad y ternura: "],["","",""]],
+"Seguro":[["Voy directo: ","Sin rodeos: ","Te lo digo claro: "],["","",""]],
+"Misterioso":[["Te cuento algo: ","Digamos que ","Una confesión breve: "],[""," Y hay más por contar."," Ya hablaremos del resto."]],
+"Maduro y directo":[["Quiero decírtelo con calma y respeto: ","Desde el respeto: ","Prefiero hablarlo con madurez: "],[" Gracias por escucharme."," Estoy abierto a escucharte."," Lo importante es cuidarnos."]]
+};
+$("#sit").innerHTML=S.map((s,i)=>`<option value="${i}">${s}</option>`).join("");
+$("#ton").innerHTML=Object.keys(T).map(t=>`<option>${t}</option>`).join("");
+let off=0;
+const low=s=>s.charAt(0).toLowerCase()+s.slice(1);
+function gen(){
+  const s=+$("#sit").value,t=T[$("#ton").value],n=$("#nom").value.trim();
+  $("#outs").innerHTML=B[s].map((b,i)=>{const k=(i+off)%3;let x=t[0][k]+b+t[1][k];if(n)x=n+", "+low(x);return `<div class="out"><textarea aria-label="Opción ${i+1}, editable">${x.replace(/</g,"&lt;")}</textarea><div class="row"><button type="button" data-a="c">Copiar</button>${navigator.share?'<button type="button" data-a="s">Compartir</button>':""}</div></div>`}).join("");
+}
+["#sit","#ton"].forEach(id=>$(id).addEventListener("change",()=>{off=0;gen();}));
+$("#nom").addEventListener("input",gen);
+$("#more").addEventListener("click",()=>{off=(off+1)%3;gen();});
+$("#outs").addEventListener("click",async e=>{
+  const b=e.target.closest("button");if(!b)return;
+  const ta=b.closest(".out").querySelector("textarea");
+  if(b.dataset.a==="s"){try{await navigator.share({text:ta.value})}catch(err){}return;}
+  try{await navigator.clipboard.writeText(ta.value)}catch(err){ta.select();document.execCommand("copy");}
+  const o=b.textContent;b.textContent="Copiado";setTimeout(()=>b.textContent=o,1400);
+});
+
+$("#sf").addEventListener("submit",e=>{
+  e.preventDefault();
+  const m=$("#sm"),v=$("#em").value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){m.textContent="Escribe un correo válido, por ejemplo nombre@correo.com.";$("#em").focus();return;}
+  if(!$("#cn").checked){m.textContent="Marca la casilla de consentimiento para poder suscribirte.";return;}
+  m.textContent="Datos válidos, pero todavía no hay un proveedor de correo conectado. No se ha guardado ni enviado nada.";
+});
+const go=id=>document.getElementById(id).scrollIntoView();
+async function cp(t,b){try{await navigator.clipboard.writeText(t)}catch(e){}if(b){const o=b.textContent;b.textContent="Copiado";setTimeout(()=>b.textContent=o,1400)}}
+const H=[
+{k:/invit|salir|vernos|quedar|propone/i,h:"Esa persona te escribe a menudo, pero no propone verse.",e:["Puede disfrutar la conversación y no estar lista para algo presencial.","Puede resultarle cómodo mantener el contacto sin compromiso.","Puede haber circunstancias que no conoces, como tiempo o timidez."],p:"Los mensajes por sí solos no dicen sus intenciones. Propón un plan concreto y ligero y observa cómo responde.",m:["Me gusta hablar contigo. ¿Te apetece que nos veamos este jueves o viernes?","Me gusta hablar contigo y quiero vernos. ¿Quedamos esta semana? Si no te interesa, dímelo sin problema."]},
+{k:/desapare|ghost|aparece|busca|respond.*(tarde|poco)/i,h:"Esa persona te busca con intensidad y luego deja de responder.",e:["Su disponibilidad puede variar por trabajo o estado de ánimo.","Puede sentirse insegura sobre cuánto compromiso quiere.","Puede interesarle la conversación, pero no sostener el contacto."],p:"Un patrón repetido merece una conversación, no más adivinanzas. Cuéntale qué necesitas y pregúntale qué necesita.",m:["He notado que a veces hablamos mucho y luego desapareces. ¿Cómo lo ves tú?","Me gusta hablar contigo, pero necesito constancia. ¿Qué esperas tú de esto?"]},
+{k:/\bex\b|expareja|ruptura|terminamos|volver/i,h:"Sigues pensando en tu ex tras la ruptura.",e:["Es habitual echar de menos rutinas y cariño aunque la relación no funcionara.","Puede haber algo sin cerrar que quieras decir o entender.","Puede que idealices lo bueno y olvides lo que os separó."],p:"Anota por qué terminó y qué ha cambiado. Antes de escribir, decide si buscas volver o cerrar. Un tiempo sin contacto puede ayudar.",m:["He pensado en nosotros y me gustaría cerrar bien lo que quedó pendiente. ¿Hablamos con calma?","Te echo de menos y quiero entender si algo ha cambiado. ¿Podemos hablarlo?"]},
+{k:/discut|pelea|mismo tema|por lo mismo/i,h:"Tu pareja y tú discutís una y otra vez por lo mismo.",e:["Puede haber una necesidad de fondo que ninguno ha expresado.","Cada uno puede entender el tema de forma distinta.","El momento o la forma de plantearlo puede encender la discusión."],p:"Elige un momento tranquilo, habla desde lo que sientes y pide algo concreto. Escuchad sin interrumpir.",m:["Acabamos discutiendo por lo mismo y no quiero eso para nosotros. ¿Lo hablamos con calma esta noche?","Quiero entender qué necesitas tú y contarte qué necesito yo. ¿Buscamos un momento tranquilo?"]},
+{k:/empez|iniciar|escribirle|hablarle|romper el hielo/i,h:"Quieres empezar una conversación con alguien que te gusta.",e:["Un saludo sencillo suele funcionar mejor que una frase ingeniosa.","Un detalle real que compartáis ayuda a conversar.","No hay forma perfecta: cuenta el interés genuino."],p:"Empieza con algo ligero y una pregunta fácil de responder. Si responde con interés, sigue; si no, no insistas.",m:["Hola, ¿qué tal tu semana? Me apeteció escribirte.","Hola, me quedé pensando en lo que comentaste. ¿Cómo te fue?"]},
+{k:/amable|educad|gusto|gusta/i,h:"No sabes si le gustas o si solo es amable contigo.",e:["La amabilidad es compatible con interés, pero también con simple educación.","Mira si hay reciprocidad: pregunta por ti, propone planes, mantiene el contacto.","Un gesto aislado dice poco; un patrón dice más."],p:"Observa la constancia durante unas semanas y, si quieres claridad, propón un plan sencillo.",m:["Me cae muy bien hablar contigo. ¿Te apetece tomar algo esta semana?","Me gustaría conocerte mejor. ¿Te animas a un plan sencillo?"]},
+{k:/./,h:"Describes una situación sentimental que te genera dudas.",e:["Con lo que cuentas no se pueden distinguir varias explicaciones posibles.","Los gestos aislados dicen poco; los patrones dicen más.","Lo que sientes importa, aunque no sepamos lo que piensa la otra persona."],p:"Separa lo que ocurrió de lo que supones y plantea una pregunta directa y tranquila. Si añades qué pasó y desde cuándo, la respuesta será más útil.",m:["Quería hablar contigo con calma sobre cómo estamos. ¿Cuándo te viene bien?","Prefiero preguntarte que suponer: ¿cómo ves lo que pasa entre nosotros?"]}
+];
+let R=null;
+function ask(){
+  const t=$("#hq").value.trim(),o=$("#hr");
+  if(t.length<8){o.innerHTML='<div class="out">Escribe al menos una frase sobre tu situación.</div>';return}
+  if(/golpe|amenaz|miedo a|me controla|me obliga|violen|abus|me humill|me pega/i.test(t)){o.innerHTML='<div class="out"><b>Tu seguridad es lo primero</b><span>Lo que describes puede implicar riesgo. Si estás en peligro, llama a los servicios de emergencia de tu país. Busca una línea de ayuda local o a una persona de confianza antes de confrontar a quien te hace daño.</span></div>';R=null;return}
+  R=H.find(x=>x.k.test(t));
+  o.innerHTML=`<div class="out"><b>Lo que cuentas</b><span>${R.h}</span></div><div class="out"><b>Posibles explicaciones</b><span>${R.e.map(x=>"• "+x).join("<br>")}</span></div><div class="out"><b>Qué puedes hacer</b><span>${R.p}</span></div><div class="out"><b>Un mensaje que podrías enviar</b><textarea id="hm" aria-label="Mensaje editable">${R.m[0]}</textarea><div class="row"><button type="button" data-m="0">Más suave</button><button type="button" data-m="1">Más directo</button><button type="button" data-c="1">Copiar</button></div></div>`;
+}
+$("#ha").addEventListener("click",ask);
+$("#hn").addEventListener("click",()=>{$("#hq").value="";$("#hr").innerHTML="";R=null;$("#hq").focus();});
+$("#hr").addEventListener("click",e=>{const b=e.target.closest("button");if(!b||!R)return;if(b.dataset.m)$("#hm").value=R.m[+b.dataset.m];else cp($("#hm").value,b);});
+
+const TS=[
+{id:"gusta",g:"Atracción",t:"¿Cómo actúas cuando alguien te gusta?",q:[
+["Alguien te gusta. ¿Qué haces primero?",["Observo y espero una señal","Busco una excusa para hablar con naturalidad","Le muestro interés con claridad"]],
+["Tarda en responderte. ¿Qué haces?",["Le doy vueltas sin decir nada","Espero y sigo con mi día","Le pregunto con tranquilidad cómo va su semana"]],
+["¿Cómo propones un plan?",["Casi nunca me atrevo","Lo sugiero de forma indirecta","Propongo día y lugar concretos"]],
+["Cuando tienes nervios…",["Me bloqueo y me alejo","Intento disimularlos","Los reconozco y sigo adelante"]],
+["Si no sientes que sea recíproco…",["Me lo callo y lo guardo","Lo dejo pasar con el tiempo","Lo hablo con claridad y sigo adelante"]]],
+r:[["Reservado","Prefieres observar antes de moverte. Te protege, pero la otra persona a veces no sabe que hay interés.","Da un paso pequeño esta semana: un comentario o una pregunta sencilla."],["Equilibrado","Mezclas prudencia e iniciativa. Das señales sin presionar.","Cuando sientas interés, pasa de las señales a un plan concreto."],["Expresivo","Te sale natural mostrar lo que sientes. Eso genera claridad y confianza.","Deja espacio al ritmo de la otra persona: claridad no es prisa."]]},
+{id:"limites",g:"Amor",t:"¿Qué tan claros tienes tus límites?",q:[
+["Alguien te pide algo que no te apetece. ¿Qué haces?",["Acepto para evitar el conflicto","Dudo y a veces cedo","Lo digo con claridad y amabilidad"]],
+["Algo de tu pareja o ligue te incomoda…",["Me lo callo","Lo insinúo","Lo digo cuando ocurre"]],
+["¿Necesitas tiempo a solas en una relación?",["Me da vergüenza pedirlo","Lo pido si no queda otra","Lo pido sin culpa"]],
+["Si alguien cruza una línea…",["Lo dejo pasar","Me alejo sin explicar","Pongo el límite y observo cómo responde"]],
+["Decir «no» a alguien que quieres…",["Me cuesta muchísimo","Depende del día","Sé que se puede querer y decir no"]]],
+r:[["En construcción","Poner límites todavía te cuesta, y es algo que se puede aprender poco a poco.","Empieza con frases simples como «prefiero no» o «necesito pensarlo»."],["En camino","Sabes lo que necesitas, aunque no siempre lo dices a tiempo.","Practica decir lo que te incomoda en el momento, con calma."],["Claros","Sabes lo que necesitas y lo comunicas con respeto.","Mantén la coherencia y escucha también los límites de la otra persona."]]}
+];
+const band=(s,n)=>s<=n*.6?0:s<=n*1.4?1:2;
+let cur=null;
+$("#tl").innerHTML=TS.map(t=>`<button class="chip" type="button" data-id="${t.id}">${t.t}</button>`).join("");
+function openTest(id){cur={t:TS.find(x=>x.id===id),i:0,a:[]};draw();}
+function draw(){
+  const{t,i,a}=cur;
+  if(i>=t.q.length)return result(t,band(a.reduce((x,y)=>x+y,0),t.q.length));
+  const[q,o]=t.q[i];
+  $("#tb").innerHTML=`<p class="note" style="margin:0 0 8px">${t.t} · Pregunta ${i+1} de ${t.q.length}</p><div role="progressbar" aria-valuemin="0" aria-valuemax="${t.q.length}" aria-valuenow="${i}" style="height:8px;border-radius:8px;background:#2d2a35;overflow:hidden"><div style="height:100%;width:${i/t.q.length*100}%;background:linear-gradient(90deg,var(--p),var(--o));transition:width .3s"></div></div><h3 style="margin:18px 0 12px">${q}</h3><div class="outs" style="grid-template-columns:1fr;margin:0">${o.map((x,j)=>`<button class="chip" type="button" style="text-align:left;min-height:52px" data-o="${j}">${x}</button>`).join("")}</div>${i?'<button class="chip" type="button" style="margin-top:12px" data-back="1">Atrás</button>':""}`;
+}
+function result(t,k){
+  const[n,d,a]=t.r[k],u=location.href.split("#")[0]+"#t="+t.id+"&r="+k;
+  cur={t,i:t.q.length,a:[],u,x:`Mi resultado en «${t.t}»: ${n}`};
+  $("#tb").innerHTML=`<p class="note" style="margin:0">${t.t}</p><h3 style="font-size:2.2rem;margin:8px 0">${n}</h3><p>${d}</p><p><b>Para probar:</b> ${a}</p><p class="note">Resultado orientativo y entretenido, no un diagnóstico.</p><div class="cta"><button class="btn" type="button" data-sh="1">Compartir</button><button class="btn ghost" type="button" data-cp="1">Copiar enlace</button></div><div class="tools"><button class="chip" type="button" data-re="1">Repetir el test</button><button class="chip" type="button" data-g="${t.g}">Leer guías de ${t.g}</button></div>`;
+}
+$("#tl").addEventListener("click",e=>{const b=e.target.closest("[data-id]");if(b)openTest(b.dataset.id);});
+$("#tb").addEventListener("click",async e=>{
+  const b=e.target.closest("button");if(!b||!cur)return;const d=b.dataset;
+  if(d.o!==undefined){cur.a.push(+d.o);cur.i++;draw();}
+  else if(d.back){cur.a.pop();cur.i--;draw();}
+  else if(d.re)openTest(cur.t.id);
+  else if(d.g){cat=d.g;guides();go("guias");}
+  else if(d.cp)cp(cur.u,b);
+  else if(d.sh){if(navigator.share){try{await navigator.share({title:"ENTRE LÍNEAS",text:cur.x,url:cur.u})}catch(err){}}else cp(cur.x+" "+cur.u,b);}
+});
+function hash(){
+  const m=location.hash.match(/t=(\w+)&r=([0-2])/),t=m&&TS.find(x=>x.id===m[1]);
+  if(t){result(t,+m[2]);go("tests");}else $("#tb").innerHTML='<p>Elige un test para empezar. Tarda un minuto y no necesitas registrarte.</p>';
+}
+
+const Q={"Primeras citas":["¿Qué plan de fin de semana te hace feliz?","¿Cuál ha sido la mejor salida o viaje que has hecho?","¿Qué te hizo reír esta semana?"],"Conocerse mejor (pareja)":["¿Qué recuerdo nuestro te gusta más?","¿Qué gesto pequeño te hace sentir que te quieren?","¿Qué cosa de ti crees que todavía no sé?"],"Divertidas":["En una isla desierta, ¿qué tres cosas llevarías?","¿Cuál es tu superpoder más inútil?","¿Qué canción te define en un karaoke?"],"Profundas":["¿Qué te gustaría haber sabido antes sobre las relaciones?","¿Qué significa para ti sentirte en casa con alguien?","¿Qué miedo te ha enseñado algo importante?"],"A distancia":["¿Qué rutina podemos crear para sentirnos cerca?","¿Cómo te gusta que hablemos en un mal día?","¿Qué plan imaginas para nuestro próximo encuentro?"],"Recién conocidos":["¿Qué hacías de pequeño que ya no haces?","¿De qué podrías hablar durante horas?","¿Qué rincón de tu ciudad recomiendas?"],"Mejorar la comunicación":["¿Cómo prefieres que te diga cuando algo me incomoda?","¿Qué necesitas de mí en los días difíciles?","¿Qué conversación pendiente te gustaría tener?"]};
+$("#tc").innerHTML=Object.keys(Q).map(k=>`<option>${k}</option>`).join("");
+const all=Object.values(Q).flat();
+$("#pd").textContent=all[Math.floor(Date.now()/864e5)%all.length];
+let lq="";
+function nextQ(){const l=Q[$("#tc").value].filter(x=>x!==lq);lq=l[Math.floor(Math.random()*l.length)];$("#tq").textContent=lq;}
+$("#tc").addEventListener("change",nextQ);$("#tn").addEventListener("click",nextQ);
+$("#tcp").addEventListener("click",e=>cp(lq,e.target));
+
+document.querySelectorAll(".qc").forEach(b=>b.addEventListener("click",()=>{
+  const a=b.dataset.a,v=b.dataset.v;
+  if(a==="h"){$("#hq").value=v;ask();go("hablemos");}
+  else if(a==="g"){const[s,t]=v.split("|");$("#sit").value=s;$("#ton").value=t;off=0;gen();go("herramientas");}
+  else if(a==="t"){openTest(v);go("tests");}
+  else{cat=v;guides();go("guias");}
+}));
+
+const ADS={client:"",slots:{}};
+if(ADS.client){const s=document.createElement("script");s.async=true;s.crossOrigin="anonymous";s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+ADS.client;document.head.appendChild(s);document.querySelectorAll(".ad").forEach(a=>{const id=ADS.slots[a.dataset.s];if(!id)return;a.hidden=false;a.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="'+ADS.client+'" data-ad-slot="'+id+'" data-ad-format="auto"></ins>';(window.adsbygoogle=window.adsbygoogle||[]).push({});});}
+
+guides();gen();nextQ();hash();
+</script>
+</body>
+</html>
